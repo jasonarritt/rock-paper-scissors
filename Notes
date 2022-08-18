@@ -1,0 +1,53 @@
+my_shoots = ['rock', 'paper', 'scissors', 'rock', 'scissors', 'scissors']
+your_shoots = ['rock', 'scissors', 'paper', 'paper', 'rock', 'rock']
+
+my_score = 0
+your_score = 0
+
+print("My Score: " + str(my_score))
+print("Your Score: " + str(your_score))
+print("\n")
+
+for my_shoot in my_shoots:
+	for your_shoot in your_shoots:
+		if (my_shoot == 'rock') and (your_shoot == 'rock'):
+			print("Two rocks collide. Nothing more than a clink sound.")
+			my_score = my_score
+			your_score = your_score
+		elif (my_shoot == 'rock') and (your_shoot == 'paper'):
+			print("Rock is engulfed by paper.")
+			my_score = my_score
+			your_score += 1
+		elif (my_shoot == 'rock') and (your_shoot == 'scissors'):
+			print("Rock smashes scissors.")
+			my_score += 1
+			your_score = your_score
+		elif (my_shoot == 'paper') and (your_shoot == 'rock'):
+			print("Paper engulfs rock.")
+			my_score += 1
+			your_score = your_score
+		elif (my_shoot == 'paper') and (your_shoot == 'paper'):
+			print("Paper contacts paper. Nothing but a crinkle.")
+			my_score = my_score
+			your_score = your_score
+		elif (my_shoot == 'paper') and (your_shoot == 'scissors'):
+			print("Paper is cut by scissors.")
+			my_score = my_score
+			your_score += 1
+		elif (my_shoot == 'scissors') and (your_shoot == 'rock'):
+			print("Scissors are smashed by rock.")
+			my_score = my_score
+			your_score += 1
+		elif (my_shoot == 'scissors') and (your_shoot == 'paper'):
+			print("Scissors cut through paper.")
+			my_score += 1
+			your_score = your_score
+		elif (my_shoot == 'scissors') and (your_shoot == 'scissors'):
+			print("Scissors clash with scissors. Just a scraping sound.")
+			my_score = my_score
+			your_score = your_score
+		print("My Score: " + str(my_score))
+		print("Your Score: " + str(your_score))
+		print("\n")
+		
+print("\nThat's it for now.")
