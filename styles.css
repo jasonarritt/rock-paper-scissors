@@ -7,7 +7,7 @@
 }
 
 body {
-  background-color: #24272e;
+  background-color: #059efe;
 }
 
 header {
@@ -22,16 +22,22 @@ header > h1 {
 }
 
 #reset {
-  background: #0c4de6;
+  background: #24272e;
   color: #fff;
   margin: 20px auto;
   padding: 20px;
-  border: 1px solid #fff;
+  border: 3px solid #e6800c;
   border-radius: 10px;
   text-align: center;
   font-weight: bold;
   font-family: "asap", sans-serif;
   display: inline-block;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+#reset:hover {
+  background: #e60c0c;
 }
 
 #user-label {
@@ -53,6 +59,26 @@ header > h1 {
   text-align: center;
   color: #fff;
   margin: 20px 0;
+}
+
+.green-glow {
+  box-shadow: 0 0 10px rgba(136, 255, 0, 0.5);
+  border: 3px solid #0ce646;
+}
+
+.red-glow {
+  box-shadow: 0 0 10px rgba(255, 0, 0, 0.5);
+  border: 3px solid #e60c0c;
+}
+
+.yellow-glow {
+  box-shadow: 0 0 10px rgba(255, 255, 0, 0.5);
+  border: 3px solid #e6e60c;
+}
+
+.ice-glow {
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+  border: 3px solid #0ce6e6;
 }
 
 .score-board {
@@ -82,12 +108,15 @@ header > h1 {
 .result {
   font-size: 40px;
   color: #fff;
+  margin: 0 10px;
 }
 
 .result > p {
   text-align: center;
   font-family: "asap", sans-serif;
   font-weight: bold;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .choices {
